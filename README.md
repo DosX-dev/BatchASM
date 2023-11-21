@@ -3,8 +3,9 @@
 ## Introduction
 
 **BatchASM** - primitive virtual machine for executing instructions in programming language environment **Windows Batch**. The virtual machine interpreter module is `VM.CMD`.
+In the examples, `call vm ...` is used as the virtual machine initializer, which implies the use of the `VM.CMD` module with the specified input data.
 
-## Data stack View
+## Data stack view
 
 The virtual machine has a built-in stack management system data, which is a set of objects, each of which is named in the format "**stack.N**",  where "**N**" - number of the element on the stack. The stack is designed to store values and is managed manually. The numbering of stack elements starts from one. The numbering of stack elements starts with the value.
 
