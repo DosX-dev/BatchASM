@@ -41,11 +41,9 @@ The virtual machine supports four basic mathematical operationsEach of them retu
 - **mul**: Multiplying values `stack.1` and `stack.2`
 - **div**:  Division of value `stack.1` on `stack.2`
 
-## Data Comparison
+## Data comparison
 
 The cmp opcode is used to compare data on the stack. This opcode compares the top two elements of the stack and sets the value of the variable "**code**" to `0` if the values are the same, and to `1` if the values are different.
-
-## Data Comparison
 
 There are two opcodes for outputting data to the console:
 
