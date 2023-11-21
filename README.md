@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**BatchASM** - primitive virtual machine for executing instructions in programming language environment **Windows Batch**.
+**BatchASM** - primitive virtual machine for executing instructions in programming language environment **Windows Batch**. The virtual machine interpreter module is `VM.CMD`.
 
 ## Data stack View
 
