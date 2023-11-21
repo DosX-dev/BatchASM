@@ -95,6 +95,13 @@ The virtual machine also supports a number of other features:
 -   **[debug]_$stack**: Prints the contents of all stack elements.
 -   **[debug]_$break**: Pauses during program execution, waits for a key to be pressed.
 
+## Adviсe
+
+* Don't forget to clean the stack with `clr`
+* Comment your code
+* Try to adhere to BatchASM standards
+
 ## Special thanks
 
-... coming soon ...
+* ShdBrk - helped port the original version of the documentation from HTML to MarkDown, translating it into English
+* You - for your interest in this project!
