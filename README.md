@@ -78,6 +78,7 @@ The virtual machine also supports a number of other features:
     ```
 -   **rand**: Generates a random number in the range `0` to `32767` and places it in `stack.1`
     ```
+        call vm push 0  &::   Stub value in stack.1
         call vm rand    &::   Getting a Random Number
         call vm out.1   &::   Printing the result written on the stack
         call vm clr     &::   Clearing stack contents
