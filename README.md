@@ -82,8 +82,10 @@ The virtual machine also supports a number of other features:
         call vm out.1   &::   Printing the result written on the stack
         call vm clr     &::   Clearing stack contents
     ```
--   **nop**: An empty operation that does not perform any actions.
-        ```call vm nop   &::   Ничего не делает```
+-   **nop** (is reserved): An empty operation that does not perform any actions.
+        ```
+        call vm nop   &::   Doesn't do anything
+        ```
 -   **hw**: Adds the string `Hello, world!` to the stack. Doesn't have much practical application.
     ```
         call vm hw      &::   Adds "Hello, world!"
