@@ -2,16 +2,13 @@
 
 ## Introduction
 
-**BatchASM** - primitive virtual machine for executing instructions in
-programming language environment **Windows Batch**.
+**BatchASM** - primitive virtual machine for executing instructions in programming language environment **Windows Batch**.
 
-## Data Stack View
+## Data stack View
 
-The virtual machine has a built-in stack management system
-data, which is a set of objects, each of which is named in the format "**stack.N**",  where "**N**" - number of the element on the stack.
-The stack is designed to store values and is managed manually.
-The numbering of stack elements starts from one.
-hr working with the data stack
+The virtual machine has a built-in stack management system data, which is a set of objects, each of which is named in the format "**stack.N**",  where "**N**" - number of the element on the stack. The stack is designed to store values and is managed manually. The numbering of stack elements starts from one. The numbering of stack elements starts with the value.
+
+## Opcodes for working with the data stack
 
 - **push**: Adds a value to the top of the stack. New value creates object "**stack.N**", where "**N**" - unique number.
 - **clr**: Clears all stack elements and frees memory.
@@ -91,7 +88,7 @@ The virtual machine also supports a number of other features:
         call vm out.1   &::   Printing the result written on the stack
         call vm clr     &::   Clearing stack contents
     ```
--   **\[unsafe\]\_$exec**: Allows you to invoke shell commands *(should be used with caution as it extends beyond the scope of the virtual machine)*.
--   **\[unsafe\]\_$exec_no_out**: Performs the same functionality as `$exec`, but blocks output to the console.
--   **\[debug\]\_$stack**: Prints the contents of all stack elements.
--   **\[debug\]\_$break**: Pauses during program execution, waits for a key to be pressed.
+-   **[unsafe]_$exec**: Allows you to invoke shell commands *(should be used with caution as it extends beyond the scope of the virtual machine)*.
+-   **[unsafe]_$exec_no_out**: Performs the same functionality as `$exec`, but blocks output to the console.
+-   **[debug]_$stack**: Prints the contents of all stack elements.
+-   **[debug]_$break**: Pauses during program execution, waits for a key to be pressed.
