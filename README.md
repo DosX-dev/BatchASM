@@ -88,7 +88,12 @@ The virtual machine also supports a number of other features:
         call vm out.1   &::   Printing the result written on the stack
         call vm clr     &::   Clearing stack contents
     ```
+
 -   **[unsafe]_$exec**: Allows you to invoke shell commands *(should be used with caution as it extends beyond the scope of the virtual machine)*.
 -   **[unsafe]_$exec_no_out**: Performs the same functionality as `$exec`, but blocks output to the console.
 -   **[debug]_$stack**: Prints the contents of all stack elements.
 -   **[debug]_$break**: Pauses during program execution, waits for a key to be pressed.
+
+## Special thanks
+
+... coming soon ...
