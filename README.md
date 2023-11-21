@@ -1,4 +1,4 @@
-<h1 align="center">Documentation BatchASM</h1>
+<h1 align="center">About BatchASM</h1>
 
 ## Introduction
 
