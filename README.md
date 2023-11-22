@@ -34,7 +34,7 @@ The virtual machine has a built-in stack management system data, which is a set 
 
 ## Mathematical operations
 
-The virtual machine supports four basic mathematical operationsEach of them returns the result in `stack.1`:
+The virtual machine supports four basic mathematical operations. Each of them returns the result in `stack.1`:
 
 - **add**: Adding values `stack.1` and `stack.2`
 - **sub**: Subtracting a value `stack.2` from `stack.1`
