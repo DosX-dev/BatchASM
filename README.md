@@ -103,6 +103,13 @@ The virtual machine also supports a number of other features:
 * Comment your code
 * Try to adhere to BatchASM standards
 
+## BatchASM Shell
+
+You can try out BatchASM in command line mode using `VM-SHELL.CMD`
+
+> Calculation of mathematical expression **(15 + 38) * 5**:
+![](https://raw.githubusercontent.com/DosX-dev/BatchASM/main/shell.jpg)
+
 ## Special thanks
 
 * ShdBrk - helped port the original version of the documentation from HTML to MarkDown, translating it into English
