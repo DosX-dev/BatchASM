@@ -107,7 +107,8 @@ The virtual machine also supports a number of other features:
 
 You can try out BatchASM in command line mode using `VM-SHELL.CMD`
 
-> Calculation of mathematical expression **(15 + 38) * 5**:
+> Calculation of mathematical expression **(15 + 38) * 5**
+
 ![](https://raw.githubusercontent.com/DosX-dev/BatchASM/main/shell.jpg)
 
 ## Special thanks
