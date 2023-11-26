@@ -15,13 +15,22 @@ The virtual machine has a built-in stack management system data, which is a set 
 
 - **push**: Adds a value to the top of the stack. New value creates object "**stack.N**", where "**N**" - unique number.
 - **clr**: Clears all stack elements and frees memory.
-- **push.ref**: Copies a value from one object *(or stack address)* to another or stores it in memory under the specified name.
+- **push.ref**: Copies a value from one object (or stack address) to another or stores it in memory under the specified name.
     ```
         call vm push "Test!"              &::   Data to be retained after clearing the stack
         call vm push.ref tmp.1 stack.1    &::   Storing the value of stack.1 into memory as tmp.1
         call vm clr                       &::   Clearing stack contents
         call vm push.ref stack.1 tmp.1    &::   Return value for stack.1
         call vm push.clr tmp.1            &::   Removing tmp.1 from memory
+        call vm out.1                     &::   Printing the result written on the stack
+        call vm clr                       &::   Clearing stack contents
+    ```
+- **push.mov**: Moves a value from one object (or stack address) to another or stores it in memory under a specified name, first clearing the object (or stack address) from which the value is transferred. Makes it possible to simplify the use of `push.ref` and `push.clr` by reducing it to one command.
+    ```
+        call vm push "Test!"              &::   Data to be retained after clearing the stack
+        call vm push.ref tmp.1 stack.1    &::   Storing the value of stack.1 into memory as tmp.1
+        call vm clr                       &::   Clearing stack contents
+        call vm push.mov stack.1 tmp.1    &::   Return value for stack.1
         call vm out.1                     &::   Printing the result written on the stack
         call vm clr                       &::   Clearing stack contents
     ```
