@@ -74,6 +74,15 @@ The virtual machine also supports a number of other features:
         call vm out.1    &::   Printing the result written on the stack
         call vm clr      &::   Clearing stack contents
     ```
+-   **vcpuid**: Returns information about the current virtual processor in `stack.1`. Preliminarily obtains the mode of data returned about the processor from `stack.1`:
+    -   **1** - version
+    -   **2** - edition
+    ```
+        call vm push 2   &::   Getting the virtual processor version
+        call vm vcpuid   &::   Call vcpuid
+        call vm out.1    &::   Printing the result written on the stack
+        call vm clr      &::   Clearing stack contents
+    ```
 -   **rand**: Generates a random number in the range `0` to `32767` and places it in `stack.1`
     ```
         call vm push 0  &::   Stub value in stack.1
