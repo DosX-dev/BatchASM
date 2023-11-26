@@ -1,8 +1,8 @@
 @echo off
 
 :VirtualMachine
-set batchasm_ver=1.0.0 vanilla
-set batchasm_edition=beta
+set batchasm_ver=1.0.0 beta
+set batchasm_edition=vanilla
 
 if "%~1" == "" (
     echo:No input instructions!
@@ -54,7 +54,13 @@ goto :eof
 :: push.clr opcode
 :: Clears the specified stack object or specified external parameter
 :opcode__push.clr
-if defined "%~1" set "%~1="
+if defined %~1 set "%~1="
+goto :eof
+
+
+:opcode__push.mov
+call :opcode__push.ref "%~1" "%~2"
+call :opcode__push.clr "%~2"
 goto :eof
 
 
@@ -175,6 +181,15 @@ goto :eof
 ) else if "%stack.1%" == "3" ( call :opcode__push.ref stack.1 PROCESSOR_LEVEL
 ) else if "%stack.1%" == "4" ( call :opcode__push.ref stack.1 NUMBER_OF_PROCESSORS
 ) else if "%stack.1%" == "5" ( call :opcode__push.ref stack.1 PROCESSOR_REVISION )
+goto :eof
+
+
+:: vcpuid opcode
+:: Returns information about the virtual BatchASM processor
+:: in the first stack element
+:opcode__vcpuid
+       if "%stack.1%" == "1" ( call :opcode__push.ref stack.1 BATCHASM_VER
+) else if "%stack.1%" == "2" ( call :opcode__push.ref stack.1 BATCHASM_EDITION )
 goto :eof
 
 
