@@ -68,8 +68,7 @@ call vm out.0
 call vm push.ref tmp.1 stack.1
 call vm clr
 call vm push 0
-call vm push.ref stack.1 tmp.1
-call vm push.clr tmp.1
+call vm push.mov stack.1 tmp.1
 call vm push 4
 call vm cmp
 call vm clr
