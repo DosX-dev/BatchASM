@@ -74,10 +74,8 @@ call vm push " = "
 call vm out.0
 call vm clr
 
-call vm push.ref stack.1 tmp.1
-call vm push.ref stack.2 tmp.2
-call vm push.clr tmp.1
-call vm push.clr tmp.2
+call vm push.mov stack.1 tmp.1
+call vm push.mov stack.2 tmp.2
 
 call vm add
 
