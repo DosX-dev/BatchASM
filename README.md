@@ -132,4 +132,4 @@ You can try out BatchASM in command line mode using `VM-SHELL.CMD`
 ## Special thanks
 
 * ShdBrk - helped port the original version of the documentation from HTML to MarkDown, translating it into English
-* You - for your interest in this project!
+* You - for your interest to this project!
