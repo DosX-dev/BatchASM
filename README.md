@@ -129,7 +129,9 @@ You can try out BatchASM in command line mode using `VM-SHELL.CMD`
 
 ![](https://raw.githubusercontent.com/DosX-dev/BatchASM/main/shell.jpg)
 
-## Special thanks
-
+## Thanks
 * ShdBrk - helped port the original version of the documentation from HTML to MarkDown, translating it into English
 * You - for your interest to this project!
+
+## ❤️✨ Special thanks
+ * 👨🏼‍💻 **[@horsicq](https://github.com/horsicq)**
